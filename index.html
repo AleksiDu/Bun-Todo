@@ -21,7 +21,7 @@
     </header>
     <main class="container">
       <form
-        hx.post="'/todos"
+        hx-post="/todos"
         hx-target="#todos"
         hx-ext="json-enc"
         _="on submit target.reset()"
@@ -30,7 +30,7 @@
         <input id="todo" name="todo" type="text" placeholder="New tod" />
         <button type="submit">Create</button>
       </form>
-      <section id="todo" hx-get="/todos" hx-trigger="load"></section>
+      <section id="todos" hx-get="/todos" hx-trigger="load"></section>
     </main>
   </body>
 </html>
