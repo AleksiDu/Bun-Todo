@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/htmx.org@1.9.5"></script>
+    <script src="https://unpkg.com/hyperscript.org@0.9.11"></script>
+    <script src="https://unpkg.com/htmx.org/dist/ext/json-enc.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css"
+    />
+    <title>Bun Todo</title>
+  </head>
+  <body>
+    <header class="container">
+      <hgroup>
+        <h1>Bun Todo</h1>
+        <h2>A.Duluzauri</h2>
+      </hgroup>
+    </header>
+    <main class="container">
+      <form action="">
+        <label for="todo">New Todo</label>
+        <input id="todo" name="todo" type="text" placeholder="New tod" />
+        <button type="submit">Create</button>
+      </form>
+      <section id="todo"></section>
+    </main>
+  </body>
+</html>
